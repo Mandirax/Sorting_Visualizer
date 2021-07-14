@@ -13,6 +13,8 @@ function check(){
         }
         if(p1=='' || p2=='')
         msg.push("*Password is required");
+       if(p1!=p2)
+       msg.push("*Password must be same");
        
        
         if(msg.length>0){
